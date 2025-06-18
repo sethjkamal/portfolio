@@ -13,9 +13,20 @@ export default function Navbar() {
 
   return (
     <nav className="bg-black shadow-lg z-50">
-      <div className="max-w-7xl mx-auto px-6 py-6">
+      <div className="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
+        {/* Logo GIF */}
+        <a href="#about" className="block">
+          <div className="flex items-center" style={{ height: '48px' }}>
+            <img
+              src="/images/logo.gif"
+              alt="SJK Logo"
+              className="h-20 sm:h-24 w-auto object-contain"
+            />
+          </div>
+        </a>
+
         {/* Desktop Navbar */}
-        <ul className="hidden md:flex justify-center gap-12 text-xl sm:text-2xl md:text-3xl font-semibold text-white tracking-wide font-mono">
+        <ul className="hidden md:flex gap-12 text-xl sm:text-2xl md:text-3xl font-semibold text-white tracking-wide font-mono">
           {navItems.map(({ label, href }) => (
             <li key={label}>
               <a
@@ -29,7 +40,7 @@ export default function Navbar() {
         </ul>
 
         {/* Mobile Hamburger */}
-        <div className="flex justify-end md:hidden">
+        <div className="md:hidden">
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="text-white text-3xl focus:outline-none"
