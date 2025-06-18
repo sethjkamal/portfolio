@@ -57,150 +57,85 @@ export default function App() {
 
   <div className="relative mx-auto max-w-6xl">
     {/* Vertical Timeline Line */}
-    <div className="absolute left-8 top-0 h-full w-1.5 bg-indigo-500"></div>
+    <div className="absolute left-4 sm:left-8 top-0 h-full w-1.5 bg-indigo-500"></div>
 
     <div className="space-y-20">
-      {/* WebBits */}
-      <div className="relative pl-4">
-        <div className="absolute left-6 top-1 w-5 h-5 bg-indigo-400 rounded-full border-2 border-white" />
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: false, amount: 0.2 }}
-        >
-          <div className="flex items-start gap-8">
-            <img
-              src="/images/logos/webbits.jpg"
-              alt="WebBits logo"
-              className="w-40 h-40 object-contain ml-12"
-            />
-            <div className="flex-1 min-w-0">
-              <h3 className="text-3xl font-semibold text-indigo-300 whitespace-nowrap">
-                WebBits – Entry-Level Software Developer
-              </h3>
-              <p className="text-lg text-gray-400 mb-2 whitespace-nowrap">
-                June 2025 – Present • Internship
-              </p>
-              <ul className="list-disc list-outside text-gray-300 text-xl space-y-2 pl-5">
-                <li>Incoming Summer 2025 Intern.</li>
-              </ul>
+      {/* Template for Each Experience */}
+      {[
+        {
+          logo: "/images/logos/webbits.jpg",
+          alt: "WebBits logo",
+          title: "WebBits – Entry-Level Software Developer",
+          titleColor: "text-indigo-300",
+          date: "June 2025 – Present • Internship",
+          points: ["Incoming Summer 2025 Intern."],
+        },
+        {
+          logo: "/images/logos/zayan.png",
+          alt: "Zayan logo",
+          title: "Zayan Soft Tech – AI & Python Intern",
+          titleColor: "text-pink-300",
+          date: "May 2025 – Present • Internship",
+          points: [
+            "Built a predictive model for customer behavior using real-world data in Google Colab.",
+            "Developing an invoice app with PDF export and custom GUI using automation tools.",
+          ],
+        },
+        {
+          logo: "/images/logos/outamation.jpg",
+          alt: "Outamation logo",
+          title: "Extern (Outamation) – AI-Powered Workflow Automation Extern",
+          titleColor: "text-indigo-300",
+          date: "Mar 2025 – May 2025 • Externship",
+          points: [
+            "Built a RAG pipeline with LlamaIndex and open-source models.",
+            "Automated document processing using Python (text annotation, NLP, data extraction).",
+            "Extracted structured insights to enhance workflow efficiency.",
+          ],
+        },
+        {
+          logo: "/images/logos/bricks.jpg",
+          alt: "Bricks 4 Kidz logo",
+          title: "Bricks 4 Kidz – Robotics Instructor",
+          titleColor: "text-pink-300",
+          date: "Apr 2022 – May 2024 • Part-time",
+          points: [
+            "Taught introductory robotics and programming using LEGOs and block coding tools.",
+            "Created engaging classroom environments for young students.",
+          ],
+        },
+      ].map((item, idx) => (
+        <div key={idx} className="relative pl-4">
+          <div
+            className={`absolute ${idx % 2 === 0 ? "bg-indigo-400" : "bg-pink-400"} left-3.5 sm:left-6 top-1 w-5 h-5 rounded-full border-2 border-white`}
+          />
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: false, amount: 0.2 }}
+          >
+            <div className="flex flex-col sm:flex-row items-start gap-6 sm:gap-8">
+              <img
+                src={item.logo}
+                alt={item.alt}
+                className="w-28 h-28 sm:w-40 sm:h-40 object-contain ml-6 sm:ml-12"
+              />
+              <div className="flex-1 min-w-0">
+                <h3 className={`text-2xl sm:text-3xl font-semibold ${item.titleColor} whitespace-nowrap`}>
+                  {item.title}
+                </h3>
+                <p className="text-base sm:text-lg text-gray-400 mb-2 whitespace-nowrap">{item.date}</p>
+                <ul className="list-disc list-outside text-gray-300 text-base sm:text-xl space-y-2 pl-5">
+                  {item.points.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+              </div>
             </div>
-          </div>
-        </motion.div>
-      </div>
-
-      {/* Zayan Soft Tech */}
-      <div className="relative pl-4">
-        <div className="absolute left-6 top-1 w-5 h-5 bg-pink-400 rounded-full border-2 border-white" />
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: false, amount: 0.2 }}
-        >
-          <div className="flex items-start gap-8">
-            <img
-              src="/images/logos/zayan.png"
-              alt="Zayan logo"
-              className="w-40 h-40 object-contain ml-12"
-            />
-            <div className="flex-1 min-w-0">
-              <h3 className="text-3xl font-semibold text-pink-300 whitespace-nowrap">
-                Zayan Soft Tech – AI & Python Intern
-              </h3>
-              <p className="text-lg text-gray-400 mb-2 whitespace-nowrap">
-                May 2025 – Present • Internship
-              </p>
-              <ul className="list-disc list-outside text-gray-300 text-xl space-y-2 pl-5">
-                <li>
-                  Built a predictive model for customer behavior using real-world
-                  data in Google Colab.
-                </li>
-                <li>
-                  Developing an invoice app with PDF export and custom GUI using
-                  automation tools.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </motion.div>
-      </div>
-
-      {/* Outamation */}
-      <div className="relative pl-4">
-        <div className="absolute left-6 top-1 w-5 h-5 bg-indigo-400 rounded-full border-2 border-white" />
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: false, amount: 0.2 }}
-        >
-          <div className="flex items-start gap-8">
-            <img
-              src="/images/logos/outamation.jpg"
-              alt="Outamation logo"
-              className="w-40 h-40 object-contain ml-12"
-            />
-            <div className="flex-1 min-w-0">
-              <h3 className="text-3xl font-semibold text-indigo-300 whitespace-nowrap">
-                Extern (Outamation) – AI-Powered Workflow Automation Extern
-              </h3>
-              <p className="text-lg text-gray-400 mb-2 whitespace-nowrap">
-                Mar 2025 – May 2025 • Externship
-              </p>
-              <ul className="list-disc list-outside text-gray-300 text-xl space-y-2 pl-5">
-                <li>
-                  Built a RAG pipeline with LlamaIndex and open-source models.
-                </li>
-                <li>
-                  Automated document processing using Python (text annotation,
-                  NLP, data extraction).
-                </li>
-                <li>
-                  Extracted structured insights to enhance workflow efficiency.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </motion.div>
-      </div>
-
-      {/* Bricks 4 Kidz */}
-      <div className="relative pl-4">
-        <div className="absolute left-6 top-1 w-5 h-5 bg-pink-400 rounded-full border-2 border-white" />
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: false, amount: 0.2 }}
-        >
-          <div className="flex items-start gap-8">
-            <img
-              src="/images/logos/bricks.jpg"
-              alt="Bricks 4 Kidz logo"
-              className="w-40 h-40 object-contain ml-12"
-            />
-            <div className="flex-1 min-w-0">
-              <h3 className="text-3xl font-semibold text-pink-300 whitespace-nowrap">
-                Bricks 4 Kidz – Robotics Instructor
-              </h3>
-              <p className="text-lg text-gray-400 mb-2 whitespace-nowrap">
-                Apr 2022 – May 2024 • Part-time
-              </p>
-              <ul className="list-disc list-outside text-gray-300 text-xl space-y-2 pl-5">
-                <li>
-                  Taught introductory robotics and programming using LEGOs and
-                  block coding tools.
-                </li>
-                <li>
-                  Created engaging classroom environments for young students.
-                </li>
-              </ul>
-            </div>
-          </div>
-        </motion.div>
-      </div>
+          </motion.div>
+        </div>
+      ))}
     </div>
   </div>
 </section>
