@@ -60,7 +60,6 @@ export default function App() {
     <div className="absolute left-4 sm:left-8 top-0 h-full w-1.5 bg-indigo-500"></div>
 
     <div className="space-y-20">
-      {/* Template for Each Experience */}
       {[
         {
           logo: "/images/logos/webbits.jpg",
@@ -105,9 +104,11 @@ export default function App() {
           ],
         },
       ].map((item, idx) => (
-        <div key={idx} className="relative pl-4">
+        <div key={idx} className="relative pl-10 sm:pl-16">
           <div
-            className={`absolute ${idx % 2 === 0 ? "bg-indigo-400" : "bg-pink-400"} left-3.5 sm:left-6 top-1 w-5 h-5 rounded-full border-2 border-white`}
+            className={`absolute ${
+              idx % 2 === 0 ? "bg-indigo-400" : "bg-pink-400"
+            } left-3.5 sm:left-6 top-1 w-5 h-5 rounded-full border-2 border-white`}
           />
           <motion.div
             initial={{ opacity: 0, y: 30 }}
@@ -119,14 +120,14 @@ export default function App() {
               <img
                 src={item.logo}
                 alt={item.alt}
-                className="w-28 h-28 sm:w-40 sm:h-40 object-contain ml-6 sm:ml-12"
+                className="w-28 h-28 sm:w-40 sm:h-40 object-contain ml-2 sm:ml-4"
               />
-              <div className="flex-1 min-w-0">
-                <h3 className={`text-2xl sm:text-3xl font-semibold ${item.titleColor} whitespace-nowrap`}>
+              <div className="flex-1 min-w-0 break-words">
+                <h3 className={`text-2xl sm:text-3xl font-semibold ${item.titleColor}`}>
                   {item.title}
                 </h3>
-                <p className="text-base sm:text-lg text-gray-400 mb-2 whitespace-nowrap">{item.date}</p>
-                <ul className="list-disc list-outside text-gray-300 text-base sm:text-xl space-y-2 pl-5">
+                <p className="text-base sm:text-lg text-gray-400 mb-2">{item.date}</p>
+                <ul className="list-disc list-outside text-gray-300 text-base sm:text-xl space-y-2 pl-5 pr-2">
                   {item.points.map((point, i) => (
                     <li key={i}>{point}</li>
                   ))}
