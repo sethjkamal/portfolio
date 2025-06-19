@@ -372,6 +372,14 @@ export default function App() {
     </div>
   </motion.div>
 </section>
+
+        <footer className="bg-black text-gray-400 text-center px-6 py-6 border-t border-gray-800 mt-12">
+  <p className="text-sm sm:text-base">
+    Copyright © 2025 Sethuram Jeevanandham Kamalakannan. All rights reserved.
+  </p>
+  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated June 2025</p>
+</footer>
+
     </div>
   )
 }
