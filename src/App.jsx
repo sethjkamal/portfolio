@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import FloatingLayer from './components/FloatingLayer'
 import { motion } from 'framer-motion';
+import { HiOutlineMail, HiOutlinePhone } from 'react-icons/hi';
 
 export default function App() {
   return (
@@ -274,7 +275,22 @@ export default function App() {
 
       <section id="contact" className="min-h-screen px-6 py-20 bg-black text-white border-t border-gray-800">
   <div className="text-center mb-12">
-    <h1 className="text-5xl font-bold">Get in Touch</h1>
+    <h1 className="text-5xl font-bold mb-6">Get in Touch</h1>
+
+    <div className="flex flex-col items-center gap-2 text-gray-300 text-lg">
+      <div className="flex items-center gap-2">
+        <HiOutlineMail className="text-pink-400 text-2xl" />
+        <a href="mailto:jeevanan@purdue.edu" className="hover:underline text-pink-400">
+          jeevanan@purdue.edu
+        </a>
+      </div>
+      <div className="flex items-center gap-2">
+        <HiOutlinePhone className="text-pink-400 text-2xl" />
+        <a href="tel:+19088302073" className="hover:underline text-pink-400">
+          +1 (908) 830-2073
+        </a>
+      </div>
+    </div>
   </div>
 
   <motion.div
