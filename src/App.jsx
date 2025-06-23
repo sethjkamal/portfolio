@@ -279,10 +279,10 @@ export default function App() {
     
     {/* Animated contact details */}
     <motion.div
-      initial={{ opacity: 0, y: 20 }}
+      initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6, delay: 0.1 }}
-      viewport={{ once: false }}
+      transition={{ duration: 0.6 }}
+      viewport={{ once: false, amount: 0.2 }}
       className="flex flex-col items-center gap-3 text-gray-300 text-lg"
     >
       <div className="flex items-center gap-2">
