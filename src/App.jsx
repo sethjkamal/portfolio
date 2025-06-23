@@ -276,20 +276,28 @@ export default function App() {
       <section id="contact" className="min-h-screen px-6 py-20 bg-black text-white border-t border-gray-800">
   <div className="text-center mb-12">
     <h1 className="text-5xl font-bold mb-6">Get in Touch</h1>
-    <div className="flex flex-col items-center gap-2 text-gray-300 text-lg">
+    
+    {/* Animated contact details */}
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, delay: 0.1 }}
+      viewport={{ once: false }}
+      className="flex flex-col items-center gap-3 text-gray-300 text-lg"
+    >
       <div className="flex items-center gap-2">
         <HiOutlineMail className="text-indigo-400 text-2xl" />
-        <a href="mailto:jeevanan@purdue.edu" className="hover:underline text-gray-300">
+        <a href="mailto:jeevanan@purdue.edu" className="hover:underline">
           jeevanan@purdue.edu
         </a>
       </div>
       <div className="flex items-center gap-2">
         <HiOutlinePhone className="text-indigo-400 text-2xl" />
-        <a href="tel:+19088302073" className="hover:underline text-gray-300">
+        <a href="tel:+19088302073" className="hover:underline">
           +1 (908) 830-2073
         </a>
       </div>
-    </div>
+    </motion.div>
   </div>
 
   <motion.div
@@ -301,66 +309,64 @@ export default function App() {
   >
     {/* Contact Form */}
     <form
-  action="https://formspree.io/f/xeokzgbb"
-  method="POST"
-  className="space-y-6 max-w-3xl mx-auto"
->
-  <motion.div
-    initial={{ opacity: 0, y: 40 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.5, delay: 0.1 }}
-    className="flex flex-col md:flex-row gap-6"
-  >
-    <input
-      type="text"
-      name="name"
-      placeholder="Name"
-      required
-      className="w-full p-3 bg-gray-800 text-white rounded"
-    />
-    <input
-      type="tel"
-      name="phone"
-      placeholder="Phone Number"
-      required
-      className="w-full p-3 bg-gray-800 text-white rounded"
-    />
-  </motion.div>
+      action="https://formspree.io/f/xeokzgbb"
+      method="POST"
+      className="space-y-6"
+    >
+      <motion.div
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        viewport={{ once: true }}
+        className="flex flex-col md:flex-row gap-6"
+      >
+        <input
+          type="text"
+          name="name"
+          placeholder="Name"
+          required
+          className="w-full p-3 bg-gray-800 text-white rounded"
+        />
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Phone Number"
+          required
+          className="w-full p-3 bg-gray-800 text-white rounded"
+        />
+      </motion.div>
 
-  <motion.input
-    initial={{ opacity: 0, y: 40 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.5, delay: 0.2 }}
-    type="email"
-    name="_replyto"
-    placeholder="Email"
-    required
-    className="w-full p-3 bg-gray-800 text-white rounded"
-  />
+      <motion.input
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        type="email"
+        name="_replyto"
+        placeholder="Email"
+        required
+        className="w-full p-3 bg-gray-800 text-white rounded"
+      />
 
-  <motion.textarea
-    initial={{ opacity: 0, y: 40 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    viewport={{ once: true }}
-    transition={{ duration: 0.5, delay: 0.3 }}
-    name="message"
-    placeholder="Message"
-    required
-    rows="5"
-    className="w-full p-3 bg-gray-800 text-white rounded"
-  ></motion.textarea>
+      <motion.textarea
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        name="message"
+        placeholder="Message"
+        required
+        rows="5"
+        className="w-full p-3 bg-gray-800 text-white rounded"
+      ></motion.textarea>
 
-  <motion.button
-    type="submit"
-    whileHover={{ scale: 1.05 }}
-    whileTap={{ scale: 0.95 }}
-    className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded shadow"
-  >
-    Send Message
-  </motion.button>
-</form>
+      <motion.button
+        type="submit"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded shadow"
+      >
+        Send Message
+      </motion.button>
+    </form>
 
     {/* Social Links */}
     <div className="flex flex-wrap justify-center gap-6">
