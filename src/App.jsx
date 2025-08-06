@@ -20,9 +20,9 @@ export default function App() {
               <span className="bg-gradient-to-r from-indigo-500 to-pink-400 bg-clip-text text-transparent">
                 Sethuram
               </span>
-              , a <br />
+              , an <br />
               <span className="bg-gradient-to-r from-pink-400 to-indigo-500 bg-clip-text text-transparent">
-                Software Developer
+                AI Engineer
               </span>
             </h1>
 
@@ -63,22 +63,33 @@ export default function App() {
     <div className="space-y-20">
       {[
         {
+          logo: "/images/logos/eduverse.png",
+          alt: "EduVerse logo",
+          title: "EduVerse – AI Engineer",
+          titleColor: "text-pink-300",
+          date: "Aug 2025 – Present • Internship",
+          points: ["Incoming Fall 2025 Intern."],
+        },
+        {
           logo: "/images/logos/webbits.jpg",
           alt: "WebBits logo",
           title: "WebBits – Entry-Level Software Developer",
           titleColor: "text-indigo-300",
-          date: "June 2025 – Present • Internship",
-          points: ["Incoming Summer 2025 Intern."],
+          date: "Jun 2025 – Sept 2025 • Internship",
+          points: [
+            "Securely implemented Auth and Client APIs with AWS Lambda, API Gateway, Cognito, and DynamoDB, with OpenAPI docs and token/API key protection.",
+            "Built dynamic client onboarding with sanitized input, sequential IDs via GSIs, and error handling."
+          ],
         },
         {
           logo: "/images/logos/zayan.png",
           alt: "Zayan logo",
           title: "Zayan Soft Tech – AI & Python Intern",
           titleColor: "text-pink-300",
-          date: "May 2025 – Present • Internship",
+          date: "May 2025 – Aug 2025 • Internship",
           points: [
-            "Built a predictive model for customer behavior using real-world data in Google Colab.",
-            "Developing an invoice app with PDF export and custom GUI using automation tools.",
+            "Built a predictive model for customer behavior using Google Colab and ML on real datasets.",
+            "Developed a full-stack invoice app with Electron GUI, PDF generation, and Node.js/Express + MongoDB backend for managing clients, payments, and invoices.",
           ],
         },
         {
@@ -91,17 +102,6 @@ export default function App() {
             "Built a RAG pipeline with LlamaIndex and open-source models.",
             "Automated document processing using Python (text annotation, NLP, data extraction).",
             "Extracted structured insights to enhance workflow efficiency.",
-          ],
-        },
-        {
-          logo: "/images/logos/bricks.jpg",
-          alt: "Bricks 4 Kidz logo",
-          title: "Bricks 4 Kidz – Robotics Instructor",
-          titleColor: "text-pink-300",
-          date: "Apr 2022 – May 2024 • Part-time",
-          points: [
-            "Taught introductory robotics and programming using LEGOs and block coding tools.",
-            "Created engaging classroom environments for young students.",
           ],
         },
       ].map((item, idx) => (
@@ -193,11 +193,12 @@ export default function App() {
         onMouseLeave={(e) => { e.currentTarget.style.transform = 'scale(1) translateY(0)' }}
       />
       <p className="text-gray-300 text-base mb-4">
-        Implementing a dynamic invoice application with a custom GUI and automated PDF export functionality. Combining backend automation with user-centric frontend design to streamline billing workflows for clients (still in development).
+        Developed a cross-platform invoice desktop application using Electron with a custom GUI for all users. Integrated automated PDF generation, payment tracking, and dynamic invoice handling through a Node.js/Express backend with MongoDB. Streamlined billing workflows by combining backend automation with user-friendly design, supporting features like installment tracking.
       </p>
       <div className="flex flex-wrap gap-3">
         <a href="https://github.com/sethjkamal/invoice-backend" target="_blank" rel="noopener noreferrer" className="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded text-sm">GitHub – Backend</a>
         <a href="https://github.com/sethjkamal/invoice-frontend" target="_blank" rel="noopener noreferrer" className="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded text-sm">GitHub – Frontend</a>
+        <a href="https://github.com/sethjkamal/invoice-desktop-app" target="_blank" rel="noopener noreferrer" className="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded text-sm">GitHub – Desktop App</a>
       </div>
     </motion.div>
 
@@ -219,7 +220,7 @@ export default function App() {
         onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
       />
       <p className="text-gray-300 text-base mt-4 mb-4">
-        Building a document-aware chatbot tailored to Purdue’s academic policies using PDF parsing and context-aware responses. Enabling natural language queries over complex institutional documents (still in development).
+        Building a document-aware chatbot tailored to Purdue’s academic policies using PDF parsing and context-aware responses. Enabling natural language queries over complex institutional documents.
       </p>
       <a href="https://github.com/sethjkamal/purdue-chatbot" target="_blank" rel="noopener noreferrer" className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded text-sm inline-block">GitHub</a>
     </motion.div>
@@ -239,7 +240,7 @@ export default function App() {
         className="w-full max-h-[400px] object-contain transition duration-300 ease-in-out hover:-translate-y-4 hover:scale-110 hover:shadow-2xl"
       />
       <p className="text-gray-300 text-base mt-4 mb-4">
-        Developing this fully responsive portfolio using React and Tailwind CSS. Features smooth animations and a modern, indigo-pink theme for both a personal/professional and unique aesthetic (continuous development).
+        Developed this fully responsive portfolio using React and Tailwind CSS. Features smooth animations and a modern, indigo-pink theme for both a personal/professional and unique aesthetic.
       </p>
       <a href="https://github.com/sethjkamal/portfolio" target="_blank" rel="noopener noreferrer" className="bg-pink-600 hover:bg-pink-700 text-white px-4 py-2 rounded text-sm inline-block">GitHub</a>
     </motion.div>
@@ -258,16 +259,14 @@ export default function App() {
     <div className="mb-6">
       <h3 className="text-xl font-semibold text-pink-300 mb-2">Languages & Tools</h3>
       <p className="text-gray-300 text-base leading-relaxed">
-        Java, Python, C, SQL, HTML, CSS, JavaScript, React, Tailwind CSS, Framer Motion, Streamlit, LangChain, HuggingFace, 
-        LlamaIndex, Google Colab, GitHub, Netlify, Visual Studio (VS) Code, Pandas, NumPy, JUnit Testing.
+         Java, Python, C, SQL, JavaScript, HTML, CSS, React, Tailwind CSS, Framer Motion, Node.js, Express.js, MongoDB, DynamoDB (GSI), Google Colab, GitHub, Netlify, Visual Studio Code, Postman, JUnit Testing, Streamlit, LangChain, HuggingFace, LlamaIndex, Serverless Framework, AWS Lambda, API Gateway, Amazon Cognito, OpenAPI.
       </p>
     </div>
 
     <div>
       <h3 className="text-xl font-semibold text-pink-300 mb-2">Concepts</h3>
       <p className="text-gray-300 text-base leading-relaxed">
-        Natural Language Processing (NLP), Retrieval-Augmented Generation (RAG), Open-Source LLMs, Object-Oriented Programming (OOP), 
-        Algorithms, Technical Communication, Workflow Automation, Document Processing.
+        Natural Language Processing (NLP), Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), Open-Source AI, REST APIs, Authentication & Authorization, Object-Oriented Programming (OOP), Algorithms, Document Processing, Workflow Automation, Technical Communication.
       </p>
     </div>
   </motion.div>
@@ -384,7 +383,7 @@ export default function App() {
     {/* Resume Download */}
     <div className="text-center">
       <a
-        href="/resume.pdf"
+        href="/Resume.pdf"
         download
         className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded text-sm inline-block transition-transform hover:-translate-y-1 hover:scale-105"
       >
@@ -398,7 +397,7 @@ export default function App() {
   <p className="text-sm sm:text-base">
     Copyright © 2025 Sethuram Jeevanandham Kamalakannan. All rights reserved.
   </p>
-  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated June 2025</p>
+  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated August 2025</p>
 </footer>
 
     </div>
