@@ -68,7 +68,10 @@ export default function App() {
           title: "EduVerse – AI Engineer",
           titleColor: "text-pink-300",
           date: "Aug 2025 – Present • Internship",
-          points: ["Incoming Fall 2025 Intern."],
+          points: [
+            "Improved AI project data across 15+ modules by fixing progression gaps, restructuring coding tasks, and aligning objectives to meet build-to-learn standards.",
+            "Evaluated Edura AI through user simulations, reporting key UI, formatting, and prompt issues."
+          ],
         },
         {
           logo: "/images/logos/webbits.jpg",
@@ -77,8 +80,8 @@ export default function App() {
           titleColor: "text-indigo-300",
           date: "Jun 2025 – Sept 2025 • Internship",
           points: [
-            "Securely implemented Auth and Client APIs with AWS Lambda, API Gateway, Cognito, and DynamoDB, with OpenAPI docs and token/API key protection.",
-            "Built dynamic client onboarding with sanitized input, sequential IDs via GSIs, and error handling."
+            "Built and deployed 8+ secure APIs with AWS Lambda, API Gateway, Cognito, and DynamoDB for authentication, onboarding, and key workflows with error handling and OpenAPI docs.",
+            "Developed Next.js/Tailwind apps with dashboards and portals for onboarding and signatures."
           ],
         },
         {
@@ -88,8 +91,8 @@ export default function App() {
           titleColor: "text-pink-300",
           date: "May 2025 – Aug 2025 • Internship",
           points: [
-            "Built a predictive model for customer behavior using Google Colab and ML on real datasets.",
-            "Developed a full-stack invoice app with Electron GUI, PDF generation, and Node.js/Express + MongoDB backend for managing clients, payments, and invoices.",
+            "Developed a predictive model for customer behavior analysis with ~75% accuracy using Google Colab, applying machine learning techniques to real-world datasets.",
+            "Built a full-stack Electron app with PDF export and MongoDB backend for invoice payments.",
           ],
         },
         {
@@ -202,7 +205,7 @@ export default function App() {
       </div>
     </motion.div>
 
-    {/* AI ChatBot */}
+    {/* AI Chatbot */}
     <motion.div
       className="bg-gray-900 p-8 rounded-xl border border-gray-700 shadow-md hover:shadow-lg transition duration-300"
       initial={{ opacity: 0, y: 30 }}
@@ -210,17 +213,17 @@ export default function App() {
       transition={{ duration: 0.6 }}
       viewport={{ once: false, amount: 0.2 }}
     >
-      <h3 className="text-2xl font-semibold text-center text-indigo-300 mb-4">AI ChatBot</h3>
+      <h3 className="text-2xl font-semibold text-center text-indigo-300 mb-4">AI Chatbot</h3>
       <img
         src="/images/projects/ai-chatbot.png"
-        alt="AI ChatBot Screenshot"
+        alt="AI Chatbot Screenshot"
         className="rounded mb-4 object-contain w-full transition-transform duration-300"
         style={{ height: '16rem', transform: 'scale(1)' }}
         onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.15)'}
         onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
       />
       <p className="text-gray-300 text-base mt-4 mb-4">
-        Building a document-aware chatbot tailored to Purdue’s academic policies using PDF parsing and context-aware responses. Enabling natural language queries over complex institutional documents.
+        Building a document-aware chatbot tailored to Purdue’s academic policies using PDF parsing, Cohere’s LLMs, and context-aware responses. Enabling natural language queries over complex institutional documents.
       </p>
       <a href="https://github.com/sethjkamal/purdue-chatbot" target="_blank" rel="noopener noreferrer" className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded text-sm inline-block">GitHub</a>
     </motion.div>
@@ -257,16 +260,23 @@ export default function App() {
     <h2 className="text-3xl font-semibold text-indigo-300 mb-4">Skills</h2>
 
     <div className="mb-6">
-      <h3 className="text-xl font-semibold text-pink-300 mb-2">Languages & Tools</h3>
+      <h3 className="text-xl font-semibold text-pink-300 mb-2">Languages</h3>
       <p className="text-gray-300 text-base leading-relaxed">
-         Java, Python, C, SQL, JavaScript, HTML, CSS, React, Tailwind CSS, Framer Motion, Node.js, Express.js, MongoDB, DynamoDB (GSI), Google Colab, GitHub, Netlify, Visual Studio Code, Postman, JUnit Testing, Streamlit, LangChain, HuggingFace, LlamaIndex, Serverless Framework, AWS Lambda, API Gateway, Amazon Cognito, OpenAPI.
+         Java, Python, C, SQL, JavaScript, HTML, CSS.
+      </p>
+    </div>
+
+    <div className="mb-6">
+      <h3 className="text-xl font-semibold text-pink-300 mb-2">Tools</h3>
+      <p className="text-gray-300 text-base leading-relaxed">
+         React, Tailwind CSS, Framer Motion, Node.js, Express.js, MongoDB, DynamoDB (GSI), Google Colab, GitHub, Netlify, Visual Studio Code, Postman, JUnit Testing, Streamlit, LangChain, HuggingFace, LlamaIndex, Serverless Framework, AWS Lambda, API Gateway, Amazon Cognito, OpenAPI.
       </p>
     </div>
 
     <div>
       <h3 className="text-xl font-semibold text-pink-300 mb-2">Concepts</h3>
       <p className="text-gray-300 text-base leading-relaxed">
-        Natural Language Processing (NLP), Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), Open-Source AI, REST APIs, Authentication & Authorization, Object-Oriented Programming (OOP), Algorithms, Document Processing, Workflow Automation, Technical Communication.
+        Natural Language Processing (NLP), Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), Open-Source AI, REST APIs, Full-Stack Development, Authentication & Authorization, Object-Oriented Programming (OOP), Algorithms, Document Processing, Workflow Automation, Technical Communication.
       </p>
     </div>
   </motion.div>
@@ -397,7 +407,7 @@ export default function App() {
   <p className="text-sm sm:text-base">
     Copyright © 2025 Sethuram Jeevanandham Kamalakannan. All rights reserved.
   </p>
-  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated August 2025</p>
+  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated September 2025</p>
 </footer>
 
     </div>
