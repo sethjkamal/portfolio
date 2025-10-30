@@ -67,10 +67,10 @@ export default function App() {
           alt: "EduVerse logo",
           title: "EduVerse – AI Engineer",
           titleColor: "text-pink-300",
-          date: "Aug 2025 – Present • Internship",
+          date: "Aug 2025 – Oct 2025 • Internship",
           points: [
             "Improved AI project data across 15+ modules by fixing progression gaps, restructuring coding tasks, and aligning objectives to meet build-to-learn standards.",
-            "Evaluated Edura AI through user simulations, reporting key UI, formatting, and prompt issues."
+            "Built a classifier for submissions to auto-route (EVALIA/DEBATO) and score recruiter projects."
           ],
         },
         {
@@ -382,7 +382,7 @@ export default function App() {
       <a href="https://www.linkedin.com/in/seth-j-kamal-741581326/" target="_blank" rel="noopener noreferrer">
         <img src="/images/icons/linkedin.svg" alt="LinkedIn" className="w-10 h-10 hover:scale-110 transition-transform" />
       </a>
-      <a href="https://github.com/sethjkamal/" target="_blank" rel="noopener noreferrer">
+      <a href="https://www.github.com/sethjkamal/" target="_blank" rel="noopener noreferrer">
         <img src="/images/icons/github.svg" alt="GitHub" className="w-10 h-10 hover:scale-110 transition-transform" />
       </a>
       <a href="https://www.instagram.com/seth_jkamal/" target="_blank" rel="noopener noreferrer">
@@ -407,7 +407,7 @@ export default function App() {
   <p className="text-sm sm:text-base">
     Copyright © 2025 Sethuram Jeevanandham Kamalakannan. All rights reserved.
   </p>
-  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated September 2025</p>
+  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated October 2025</p>
 </footer>
 
     </div>
