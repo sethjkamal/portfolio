@@ -407,7 +407,7 @@ export default function App() {
   <p className="text-sm sm:text-base">
     Copyright © 2025 Sethuram Jeevanandham Kamalakannan. All rights reserved.
   </p>
-  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated October 2025</p>
+  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated November 2025</p>
 </footer>
 
     </div>
