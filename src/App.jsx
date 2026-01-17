@@ -262,7 +262,7 @@ export default function App() {
     <div className="mb-6">
       <h3 className="text-xl font-semibold text-pink-300 mb-2">Languages</h3>
       <p className="text-gray-300 text-base leading-relaxed">
-         Java, Python, C, SQL, JavaScript, HTML, CSS.
+         Java, Python, C, C++, R, SQL, JavaScript, HTML, CSS.
       </p>
     </div>
 
@@ -407,7 +407,7 @@ export default function App() {
   <p className="text-sm sm:text-base">
     Copyright © 2025 Sethuram Jeevanandham Kamalakannan. All rights reserved.
   </p>
-  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated November 2025</p>
+  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated January 2026</p>
 </footer>
 
     </div>
