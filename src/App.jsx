@@ -63,6 +63,16 @@ export default function App() {
     <div className="space-y-20">
       {[
         {
+          logo: "/images/logos/regeneron.png",
+          alt: "Regeneron logo",
+          title: "Regeneron – Data Enablement & Analytics",
+          titleColor: "text-indigo-300",
+          date: "Jun 2026 – Dec 2026 • Co-Op",
+          points: [
+            "Incoming Summer 2026."
+          ],
+        },
+        {
           logo: "/images/logos/eduverse.png",
           alt: "EduVerse logo",
           title: "EduVerse – AI Engineer",
@@ -213,7 +223,7 @@ export default function App() {
       transition={{ duration: 0.6 }}
       viewport={{ once: false, amount: 0.2 }}
     >
-      <h3 className="text-2xl font-semibold text-center text-indigo-300 mb-4">AI Chatbot</h3>
+      <h3 className="text-2xl font-semibold text-center text-indigo-300 mb-4">Purdue PoliBot</h3>
       <img
         src="/images/projects/ai-chatbot.png"
         alt="AI Chatbot Screenshot"
@@ -407,7 +417,7 @@ export default function App() {
   <p className="text-sm sm:text-base">
     Copyright © 2025 Sethuram Jeevanandham Kamalakannan. All rights reserved.
   </p>
-  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated January 2026</p>
+  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated February 2026</p>
 </footer>
 
     </div>
