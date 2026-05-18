@@ -27,7 +27,7 @@ export default function App() {
             </h1>
 
             <p className="text-2xl sm:text-3xl max-w-xl text-gray-300 mb-6">
-              Sophomore at Purdue University studying Computer Science with a growing focus in Artificial Intelligence
+              Junior at Purdue University studying Computer Science with a growing focus in Artificial Intelligence
             </p>
 
             {/* Centered Button */}
@@ -417,7 +417,7 @@ export default function App() {
   <p className="text-sm sm:text-base">
     Copyright © 2025 Sethuram Jeevanandham Kamalakannan. All rights reserved.
   </p>
-  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated February 2026</p>
+  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated May 2026</p>
 </footer>
 
     </div>
