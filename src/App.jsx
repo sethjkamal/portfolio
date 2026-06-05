@@ -20,9 +20,9 @@ export default function App() {
               <span className="bg-gradient-to-r from-indigo-500 to-pink-400 bg-clip-text text-transparent">
                 Sethuram
               </span>
-              , an <br />
+              , a <br />
               <span className="bg-gradient-to-r from-pink-400 to-indigo-500 bg-clip-text text-transparent">
-                AI Engineer
+                Data Engineer
               </span>
             </h1>
 
@@ -65,7 +65,7 @@ export default function App() {
         {
           logo: "/images/logos/regeneron.png",
           alt: "Regeneron logo",
-          title: "Regeneron – Data Enablement & Analytics",
+          title: "Regeneron – Data Engineer Intern",
           titleColor: "text-indigo-300",
           date: "Jun 2026 – Dec 2026 • Co-Op",
           points: [
@@ -417,7 +417,7 @@ export default function App() {
   <p className="text-sm sm:text-base">
     Copyright © 2025 Sethuram Jeevanandham Kamalakannan. All rights reserved.
   </p>
-  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated May 2026</p>
+  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated June 2026</p>
 </footer>
 
     </div>
