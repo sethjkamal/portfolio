@@ -403,7 +403,7 @@ export default function App() {
     {/* Resume Download */}
     <div className="text-center">
       <a
-        href="/resume.pdf"
+        href="/Resume.pdf"
         download
         className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded text-sm inline-block transition-transform hover:-translate-y-1 hover:scale-105"
       >
