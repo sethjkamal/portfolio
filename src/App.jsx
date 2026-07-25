@@ -67,9 +67,10 @@ export default function App() {
           alt: "Regeneron logo",
           title: "Regeneron – Data Engineer Intern",
           titleColor: "text-indigo-300",
-          date: "Jun 2026 – Dec 2026 • Co-Op",
+          date: "Jun 2026 – Present • Co-Op",
           points: [
-            "Incoming Summer 2026."
+            "Automated 76-page Pilot/Toxicology report generation in Seeq Mycroft using Python and SPY, improving documentation efficiency and consistency.",
+            "Built validation and formatting enhancements for Seeq Reagent Templates using Seeq SDK."
           ],
         },
         {
@@ -79,8 +80,8 @@ export default function App() {
           titleColor: "text-pink-300",
           date: "Aug 2025 – Oct 2025 • Internship",
           points: [
-            "Improved AI project data across 15+ modules by fixing progression gaps, restructuring coding tasks, and aligning objectives to meet build-to-learn standards.",
-            "Built a classifier for submissions to auto-route (EVALIA/DEBATO) and score recruiter projects."
+            "Built an AI-powered project classifier for challenge submissions, automating ZIP-based categorization and recruiter scoring workflows.",
+            "Enhanced 15+ AI learning modules by improving task structure and learning objectives."
           ],
         },
         {
@@ -162,7 +163,7 @@ export default function App() {
 
   <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-6xl mx-auto">
 
-    {/* RAG Pipeline */}
+    {/* AI Chatbot */}
     <motion.div
       className="bg-gray-900 p-8 rounded-xl border border-gray-700 shadow-md hover:shadow-lg transition duration-300"
       initial={{ opacity: 0, y: 30 }}
@@ -170,19 +171,19 @@ export default function App() {
       transition={{ duration: 0.6 }}
       viewport={{ once: false, amount: 0.2 }}
     >
-      <h3 className="text-2xl font-semibold text-center text-indigo-300 mb-4">RAG Pipeline</h3>
+      <h3 className="text-2xl font-semibold text-center text-indigo-300 mb-4">Purdue PoliBot</h3>
       <img
-        src="/images/projects/rag-pipeline.png"
-        alt="RAG Pipeline Screenshot"
-        className="w-full max-h-[400px] object-contain transition duration-300 ease-in-out hover:-translate-y-4 hover:scale-110 hover:shadow-2xl"
+        src="/images/projects/ai-chatbot.png"
+        alt="AI Chatbot Screenshot"
+        className="rounded mb-4 object-contain w-full transition-transform duration-300"
+        style={{ height: '16rem', transform: 'scale(1)' }}
+        onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.15)'}
+        onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
       />
       <p className="text-gray-300 text-base mt-4 mb-4">
-        Developed a Retrieval-Augmented Generation pipeline using LlamaIndex and open-source language models to enhance document-based question answering. Integrated Colab and a Slideshow walkthrough to demonstrate architecture, embedding flow, and retrieval logic in a practical context.
+        Built a Retrieval-Augmented Generation (RAG) chatbot for Purdue academic policies using PDF parsing, embeddings, LangChain, and Cohere LLMs to provide context-aware responses from institutional documents. Developed a Streamlit interface enabling natural language queries over complex policy documents while improving accessibility of university resources.
       </p>
-      <div className="flex flex-wrap gap-3">
-        <a href="https://colab.research.google.com/drive/1KAsh7ByAS9_q-WccGi_noplwFT7WuG51?usp=sharing" target="_blank" rel="noopener noreferrer" className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded text-sm">Google Colab</a>
-        <a href="https://docs.google.com/presentation/d/1bnpzDRatNcT1pWgyPsrD9huPUvcht80vi6tmLRyEIFE/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded text-sm">Slides</a>
-      </div>
+      <a href="https://github.com/sethjkamal/purdue-chatbot" target="_blank" rel="noopener noreferrer" className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded text-sm inline-block">GitHub</a>
     </motion.div>
 
     {/* Invoice App */}
@@ -215,7 +216,7 @@ export default function App() {
       </div>
     </motion.div>
 
-    {/* AI Chatbot */}
+    {/* RAG Pipeline */}
     <motion.div
       className="bg-gray-900 p-8 rounded-xl border border-gray-700 shadow-md hover:shadow-lg transition duration-300"
       initial={{ opacity: 0, y: 30 }}
@@ -223,19 +224,19 @@ export default function App() {
       transition={{ duration: 0.6 }}
       viewport={{ once: false, amount: 0.2 }}
     >
-      <h3 className="text-2xl font-semibold text-center text-indigo-300 mb-4">Purdue PoliBot</h3>
+      <h3 className="text-2xl font-semibold text-center text-indigo-300 mb-4">RAG Pipeline</h3>
       <img
-        src="/images/projects/ai-chatbot.png"
-        alt="AI Chatbot Screenshot"
-        className="rounded mb-4 object-contain w-full transition-transform duration-300"
-        style={{ height: '16rem', transform: 'scale(1)' }}
-        onMouseEnter={e => e.currentTarget.style.transform = 'scale(1.15)'}
-        onMouseLeave={e => e.currentTarget.style.transform = 'scale(1)'}
+        src="/images/projects/rag-pipeline.png"
+        alt="RAG Pipeline Screenshot"
+        className="w-full max-h-[400px] object-contain transition duration-300 ease-in-out hover:-translate-y-4 hover:scale-110 hover:shadow-2xl"
       />
       <p className="text-gray-300 text-base mt-4 mb-4">
-        Building a document-aware chatbot tailored to Purdue’s academic policies using PDF parsing, Cohere’s LLMs, and context-aware responses. Enabling natural language queries over complex institutional documents.
+        Developed a Retrieval-Augmented Generation pipeline using LlamaIndex and open-source language models to enhance document-based question answering. Integrated Colab and a Slideshow walkthrough to demonstrate architecture, embedding flow, and retrieval logic in a practical context.
       </p>
-      <a href="https://github.com/sethjkamal/purdue-chatbot" target="_blank" rel="noopener noreferrer" className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded text-sm inline-block">GitHub</a>
+      <div className="flex flex-wrap gap-3">
+        <a href="https://colab.research.google.com/drive/1KAsh7ByAS9_q-WccGi_noplwFT7WuG51?usp=sharing" target="_blank" rel="noopener noreferrer" className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded text-sm">Google Colab</a>
+        <a href="https://docs.google.com/presentation/d/1bnpzDRatNcT1pWgyPsrD9huPUvcht80vi6tmLRyEIFE/edit?usp=sharing" target="_blank" rel="noopener noreferrer" className="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded text-sm">Slides</a>
+      </div>
     </motion.div>
 
     {/* Portfolio Website */}
@@ -277,16 +278,23 @@ export default function App() {
     </div>
 
     <div className="mb-6">
-      <h3 className="text-xl font-semibold text-pink-300 mb-2">Tools</h3>
+      <h3 className="text-xl font-semibold text-pink-300 mb-2">Frameworks & Libraries</h3>
       <p className="text-gray-300 text-base leading-relaxed">
-         React, Tailwind CSS, Framer Motion, Node.js, Express.js, MongoDB, DynamoDB (GSI), Google Colab, GitHub, Netlify, Visual Studio Code, Postman, JUnit Testing, Streamlit, LangChain, HuggingFace, LlamaIndex, Serverless Framework, AWS Lambda, API Gateway, Amazon Cognito, OpenAPI.
+         React, Tailwind CSS, Framer Motion, Postman, Node.js, Express.js, Streamlit, LangChain, HuggingFace, LlamaIndex, Pandas, JUnit.
+      </p>
+    </div>
+
+    <div className="mb-6">
+      <h3 className="text-xl font-semibold text-pink-300 mb-2">AI/ML</h3>
+      <p className="text-gray-300 text-base leading-relaxed">
+        Natural Language Processing (NLP), Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), Open-Source AI, Document Processing.
       </p>
     </div>
 
     <div>
-      <h3 className="text-xl font-semibold text-pink-300 mb-2">Concepts</h3>
+      <h3 className="text-xl font-semibold text-pink-300 mb-2">Cloud & Databases</h3>
       <p className="text-gray-300 text-base leading-relaxed">
-        Natural Language Processing (NLP), Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), Open-Source AI, REST APIs, Full-Stack Development, Authentication & Authorization, Object-Oriented Programming (OOP), Algorithms, Document Processing, Workflow Automation, Technical Communication.
+        AWS Lambda, API Gateway, Amazon Cognito, DynamoDB (GSI), MongoDB, Serverless Framework, OpenAPI, Seeq SDK, Time-Series Analysis.
       </p>
     </div>
   </motion.div>
@@ -403,7 +411,7 @@ export default function App() {
     {/* Resume Download */}
     <div className="text-center">
       <a
-        href="/Resume.pdf"
+        href="/Resume_0725.pdf"
         download
         className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded text-sm inline-block transition-transform hover:-translate-y-1 hover:scale-105"
       >
@@ -417,7 +425,7 @@ export default function App() {
   <p className="text-sm sm:text-base">
     Copyright © 2025 Sethuram Jeevanandham Kamalakannan. All rights reserved.
   </p>
-  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated June 2026</p>
+  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated July 2026</p>
 </footer>
 
     </div>
