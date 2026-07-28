@@ -102,8 +102,8 @@ export default function App() {
           titleColor: "text-pink-300",
           date: "May 2025 – Aug 2025 • Internship",
           points: [
-            "Developed a predictive model for customer behavior analysis with ~75% accuracy using Google Colab, applying machine learning techniques to real-world datasets.",
-            "Built a full-stack Electron app with PDF export and MongoDB backend for invoice payments.",
+            "Developed a machine learning model in Google Colab to analyze customer behavior patterns, achieving 75% prediction accuracy through data preprocessing and model evaluation.",
+            "Built an invoice management app using Electron, Node.js, and MongoDB with a custom GUI.",
           ],
         },
         {
@@ -280,7 +280,7 @@ export default function App() {
     <div className="mb-6">
       <h3 className="text-xl font-semibold text-pink-300 mb-2">Frameworks & Libraries</h3>
       <p className="text-gray-300 text-base leading-relaxed">
-         React, Tailwind CSS, Framer Motion, Postman, Node.js, Express.js, Streamlit, LangChain, HuggingFace, LlamaIndex, Pandas, JUnit.
+         React, Tailwind CSS, Framer Motion, Electron, Node.js, Express.js, Streamlit, LangChain, HuggingFace, LlamaIndex, Pandas, JUnit, Postman.
       </p>
     </div>
 
@@ -411,7 +411,7 @@ export default function App() {
     {/* Resume Download */}
     <div className="text-center">
       <a
-        href="/Resume_0725.pdf"
+        href="/Resume_0728.pdf"
         download
         className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded text-sm inline-block transition-transform hover:-translate-y-1 hover:scale-105"
       >
