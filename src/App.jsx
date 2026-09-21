@@ -69,8 +69,8 @@ export default function App() {
           titleColor: "text-indigo-300",
           date: "Jun 2026 – Present • Co-Op",
           points: [
-            "Automated 76-page Pilot/Toxicology report generation in Seeq Mycroft using Python and SPY, improving documentation efficiency and consistency.",
-            "Built validation and formatting enhancements for Seeq Reagent Templates using Seeq SDK."
+            "Automated 31-page Pilot/Toxicology report generation and enhanced Reagent Templates using Python, SPY, and Seeq SDK, reducing manual effort and improving data consistency.",
+            "Resolved Biobank issues involving queue management, status tracking, and partition mapping."
           ],
         },
         {
@@ -280,7 +280,7 @@ export default function App() {
     <div className="mb-6">
       <h3 className="text-xl font-semibold text-pink-300 mb-2">Frameworks & Libraries</h3>
       <p className="text-gray-300 text-base leading-relaxed">
-         React, Tailwind CSS, Framer Motion, Electron, Node.js, Express.js, Streamlit, LangChain, HuggingFace, LlamaIndex, Pandas, JUnit, Postman.
+         React, Tailwind CSS, Framer Motion, Electron, Node.js, Express.js, Streamlit, LangChain, HuggingFace, LlamaIndex, Pandas, JUnit, Pytest, Postman.
       </p>
     </div>
 
@@ -294,7 +294,7 @@ export default function App() {
     <div>
       <h3 className="text-xl font-semibold text-pink-300 mb-2">Cloud & Databases</h3>
       <p className="text-gray-300 text-base leading-relaxed">
-        AWS Lambda, API Gateway, Amazon Cognito, DynamoDB (GSI), MongoDB, Serverless Framework, OpenAPI, Seeq SDK, Time-Series Analysis.
+        AWS Lambda, API Gateway, Amazon Cognito, DynamoDB (GSI), MongoDB, Serverless Framework, OpenAPI, Seeq SDK, Time-Series Analysis, MQTT.
       </p>
     </div>
   </motion.div>
@@ -411,7 +411,7 @@ export default function App() {
     {/* Resume Download */}
     <div className="text-center">
       <a
-        href="/Resume_0728.pdf"
+        href="/Resume_0921.pdf"
         download
         className="bg-pink-600 hover:bg-pink-700 text-white px-6 py-3 rounded text-sm inline-block transition-transform hover:-translate-y-1 hover:scale-105"
       >
@@ -425,7 +425,7 @@ export default function App() {
   <p className="text-sm sm:text-base">
     Copyright © 2025 Sethuram Jeevanandham Kamalakannan. All rights reserved.
   </p>
-  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated July 2026</p>
+  <p className="text-xs sm:text-sm mt-1 text-gray-500">Last updated September 2026</p>
 </footer>
 
     </div>
